@@ -1,4 +1,4 @@
-<project name="ant-task" default="dist" basedir="module3/ant-task">
+<project name="ant-task" default="dist" basedir="module3/ant-task/">
 
   <target name="init">
 
