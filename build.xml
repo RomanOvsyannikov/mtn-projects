@@ -1,14 +1,14 @@
-<project name="ant-task" default="dist" basedir="Ant-task/">
+<project name="ant-task" default="dist" basedir="module3/ant-task">
 
   <target name="init">
 
-  <property name="src" location="Ant-task/module3/ant-task/src/com/test/"/>
-  <property name="build" location="Ant-task/module3/ant-task/"/>
-  <property name="dist"  location="Ant-task/module3/ant-task/"/>
-  <property name="lib"  location="Ant-task/module3/ant-task/lib/"/>
-  <property name="test"  location="Ant-task/module3/ant-task/test/com/test/
+  <property name="src" location="module3/ant-task/src/com/test/"/>
+  <property name="build" location="module3/ant-task/"/>
+  <property name="dist"  location="module3/ant-task/"/>
+  <property name="lib"  location="module3/ant-task/lib/"/>
+  <property name="test"  location="module3/ant-task/test/com/test/
 "/>
-  <property name="jUnittest"  location="Ant-task/module3/ant-task/lib/"/>
+  <property name="jUnittest"  location="module3/ant-task/lib/"/>
   </target>
 
   <target name="clean" depends="init">
