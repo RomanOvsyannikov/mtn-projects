@@ -2,12 +2,13 @@
 
   <target name="init">
 
-  <property name="src" location="src"/>
-  <property name="build" location="build"/>
-  <property name="dist"  location="dist"/>
-  <property name="lib"  location="lib"/>
-  <property name="test"  location="test"/>
-  <property name="jUnittest"  location="jUnittest"/>
+  <property name="src" location="ant-task/module3/ant-task/src/com/test/"/>
+  <property name="build" location="ant-task/module3/ant-task/"/>
+  <property name="dist"  location="ant-task/module3/ant-task/"/>
+  <property name="lib"  location="ant-task/module3/ant-task/lib/"/>
+  <property name="test"  location="ant-task/module3/ant-task/test/com/test/
+"/>
+  <property name="jUnittest"  location="ant-task/module3/ant-task/lib/"/>
   </target>
 
   <target name="clean" depends="init">
