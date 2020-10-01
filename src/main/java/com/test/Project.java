@@ -11,7 +11,7 @@ class Project {
   
   public static void main(String[] args) {
     System.out.println("Hellow MTN");
-    System.out.printl("Hellow MTN");
+    System.out.println("Hellow MTN1");
+    System.out.println("Hellow MTN2");
   }
-
 }
