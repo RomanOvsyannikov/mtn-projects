@@ -26,6 +26,12 @@
     <version>3.2.2</version>
   </dependency>
  </dependencies>
+ <distributionManagement>
+   <repository>
+	<id>MavenNexus</id>
+	<url>http://10.19.10.4/nexus/content/repositories/maven-snapshots</url>
+	</repository>
+</distributionManagement>
   <build>
     <plugins>
       <plugin>
@@ -55,6 +61,32 @@
           </manifest>
         </archive>
       </configuration>
+             <plugin>
+<groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-deploy-plugin</artifactId>
+	<version>2.8.2</version>
+	         <configuration>
+			<skip>true</skip>
+				</configuration>
+	</plugin>
+ <plugin>
+	<groupId>org.sonatype.plugins</groupId>
+		<artifactId>nexus-staging-maven-plugin</artifactId>
+			<version>1.6.8</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<serverId>MavenNexus</serverId>
+					<nexusUrl>http://10.19.10.4/nexus/</nexusUrl>
+					<skipStaging>true</skipStaging>
+				</configuration>
     </plugin>
     </plugins>
   </build>
